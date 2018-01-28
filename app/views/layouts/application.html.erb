@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Venue</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <h1><%= link_to "Venue", root_path %></h1>
+      
+      <nav>
+        <%= link_to "New post", new_post_path %>
+      </nav>      
+    </header>
+    
+    <main>
+      <%= yield %>
+    </main>
+    
+  </body>
+</html>

@@ -1,0 +1,23 @@
+section.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 340px;
+  grid-gap: 20px 20px;
+  
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid transparent;
+    
+    &:hover {
+      border-color: #eeeeee;
+    }
+  }
+  
+  img {
+    max-height: 300px;
+    max-width: 300px;
+  }
+}

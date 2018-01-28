@@ -1,0 +1,15 @@
+<h1>Posts</h1>
+
+<section class="grid">
+  
+  <% @posts.each do |post| %>
+    <%= link_to post_path(post) do %>
+      <%= image_tag post.image.thumb %>
+    <% end %>
+  <% end %>  
+  
+</section>
+
+<p>
+  <%= link_to "New post", new_post_path %>
+</p>

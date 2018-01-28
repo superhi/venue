@@ -1,0 +1,41 @@
+$black: #111118;
+$grey: #666666;
+$lightgrey: #b8b8b8;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica;
+  color: $black;
+  margin: 20px 20px 20px 20px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+  padding: 10px 20px 10px 20px;
+  background-color: white;
+  
+  display: flex;
+  justify-content: space-between;
+  
+  h1 {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  a {
+    color: $grey;
+    text-decoration: none;
+  }
+}
+
+main {
+  margin-top: 60px;
+}
+
