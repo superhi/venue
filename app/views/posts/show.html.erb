@@ -1,3 +1,4 @@
+<!-- show me a medium sized image based on the uploader -->
 <%= image_tag @post.image.medium %>
 
 <h1><%= @post.title %></h1>
@@ -5,6 +6,12 @@
 <p><%= @post.body %></p>
 
 <div class="actions">
+  <!-- edit_post_path comes from the config/routes.rb file -->
   <%= link_to "Edit", edit_post_path(@post) %>
+  
+  <!-- as we're not showing a next page but instead doing an action straight away -->
+  <!-- we're using a different "method" to interact with the @post record -->
+  <!-- default is "get" which maps to "show" in Rails -->
+  <!-- now we're changing to "delete" which maps to "destroy" in Rails by default -->
   <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %>
 </div>

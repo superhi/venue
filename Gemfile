@@ -8,15 +8,16 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
-# Use sqlite3 as the database for Active Record
+
+# we want to use sqlite3 in dev mode but that's not supported on Heroku
 group :development do
   gem 'sqlite3'
 end
 
+# ...so for Heroku, lets use PostgreSQL instead
 group :production do
   gem 'pg'
 end
-
 
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
@@ -38,10 +39,14 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# simple form makes forms simpler!
 gem 'simple_form'
 
+# carrierwave handles uploads
 gem 'carrierwave'
+# minimagick resizing images
 gem 'mini_magick'
+# fog uploads to the cloud
 gem 'fog-aws'
 
 

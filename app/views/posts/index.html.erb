@@ -1,13 +1,15 @@
 <h1>Posts</h1>
 
 <section class="grid">
+  <!-- @posts is from the posts_controller index action -->
   
+  <!-- this is a loop that repeats based on how many posts there are -->
   <% @posts.each do |post| %>
     <%= link_to post_path(post) do %>
       <%= image_tag post.image.thumb %>
     <% end %>
   <% end %>  
-  
+  <!-- loop ends here due to the end above here -->
 </section>
 
 <p>

@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- page title, we can fill this per page in with content_for in Rails -->
     <title>Venue</title>
+    
+    <!-- this is rails's security tags -->
     <%= csrf_meta_tags %>
-
+    
+    <!-- rails will bundle up all the files based on app/assets/stylesheets/application.css -->
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    
+    <!-- rails will bundle up all the files based on app/assets/javascripts/application.js -->
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <header>
+      <!-- the name of this project is a joke based on Are.na, a venue is a smaller version of an arena lol -->
       <h1><%= link_to "Venue", root_path %></h1>
       
       <nav>
@@ -18,8 +25,19 @@
     </header>
     
     <main>
+      <!-- this is where all the views in posts get put inside of -->
       <%= yield %>
     </main>
+    
+    <footer>
+      <p>
+        This site is a demo by <a href="http://www.superhi.com">SuperHi</a> + will reset every 10 mins
+      </p>
+      
+      <p>
+        <a href="https://www.github.co/superhi/venue">View the source code here</a>
+      </p>
+    </footer>
     
   </body>
 </html>

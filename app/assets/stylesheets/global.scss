@@ -37,5 +37,58 @@ header {
 
 main {
   margin-top: 60px;
+  margin-bottom: 100px;
 }
 
+a {
+  color: $black;
+}
+
+form {
+  max-width: 600px;
+  
+  div.input {
+    margin: 0 0 20px 0;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input, textarea {
+    font: inherit;
+  }
+  
+  input[type=text], textarea {
+    border: 2px solid $lightgrey;
+    width: 100%;
+    padding: 10px 12px 10px 12px;
+  }
+  
+  textarea {
+    min-height: 100px;
+  }
+  
+  input[type=submit] {
+    background: $black;
+    color: white;
+    -webkit-appearance: none;
+    padding: 12px 20px 12px 20px;
+  }
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 20px 5px 20px;
+  
+  display: flex;
+  justify-content: space-between;
+  
+  background-color: white;
+  font-size: 12px;
+}
