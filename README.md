@@ -1,6 +1,6 @@
 # Venue by SuperHi
 
-This project is a small Ruby on Rails project for uploading image bookmarks.
+This project is a small Ruby on Rails project for uploading image bookmarks - styled up with Sass, images hosted on Amazon S3 and site hosted on Heroku
 
 ## Features
 
@@ -20,7 +20,7 @@ This project is a small Ruby on Rails project for uploading image bookmarks.
 
 ## How to install...
 
-Once you've installed Ruby, Rails and Git using installrails.com, open your terminal and go to a project. You can install this project by doing...
+Once you've installed Ruby, Rails and Git using installrails.com, open your terminal and go to a folder of your choic. You can install this project by doing...
 
 * `git clone git@github.com:superhi/venue.git`
 * `cd venue`
@@ -29,7 +29,7 @@ Once you've installed Ruby, Rails and Git using installrails.com, open your term
 * `rails db:seed`
 * `rails server`
 
-You can edit the code to fit!
+You can edit the code to fit! The code is fully commented
 
 ## To set up the secrets
 
