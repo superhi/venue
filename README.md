@@ -22,12 +22,12 @@ This project is a small Ruby on Rails project for uploading image bookmarks.
 
 Once you've installed Ruby, Rails and Git using installrails.com, open your terminal and go to a project. You can install this project by doing...
 
-* git clone git@github.com:superhi/venue.git
-* cd venue
-* bundle install
-* rails db:migrate
-* rails db:seed 
-* rails server
+* `git clone git@github.com:superhi/venue.git`
+* `cd venue`
+* `bundle install`
+* `rails db:migrate`
+* `rails db:seed`
+* `rails server`
 
 You can edit the code to fit!
 
