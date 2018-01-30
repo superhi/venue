@@ -31,6 +31,18 @@ Once you've installed Ruby, Rails and Git using installrails.com, open your term
 
 You can edit the code to fit! The code is fully commented
 
+## Comments
+
+Most of the comments in this projects are in:
+
+* [app/assets/stylesheets](https://github.com/superhi/venue/tree/master/app/assets/stylesheets)
+* [app/controllers](https://github.com/superhi/venue/tree/master/app/controllers)
+* [app/models](https://github.com/superhi/venue/tree/master/app/models)
+* [app/views/posts](https://github.com/superhi/venue/tree/master/app/views/posts)
+* [app/views/layout/application.html.erb](https://github.com/superhi/venue/tree/master/app/views/layout/application.html.erb)
+* [config/routes.rb](https://github.com/superhi/venue/tree/master/config/routes.rb)
+* [Gemfile](https://github.com/superhi/venue/tree/master/Gemfile)
+
 ## To set up the secrets
 
 My AWS keys and secrets in the video won't work because of security reasons. To add your own...
